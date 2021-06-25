@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        PERSONEL DETAILS.
+    </title>
+    <link rel="stylesheet" href="AS1.css">
+</head>
+
+<body>
+    <h1>Enter the following details.</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Name*</label><label class="validation-error hide" id="NameValidationError"></label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="age" id="age">
+                    </div>
+                    <div>
+                        <label>Emailid</label>
+                        <input type="text" name="emailid" id="emailid">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="person" id="details">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Emailid</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="AS1.js"></script>
+</body>
+
+</html>
+
